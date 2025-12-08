@@ -1,0 +1,26 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-contacto',
+  standalone: true,
+  template: `
+    <div class="page-content">
+      <h1>Contáctenos</h1>
+
+      <p>
+        Si deseas cotizar un proyecto o recibir asesoría tecnológica, estamos
+        disponibles para ayudarte.
+      </p>
+
+      <h2>Correo</h2>
+      <p>contacto@solusoft.cl</p>
+
+      <h2>Teléfono</h2>
+      <p>+56 9 1234 5678</p>
+
+      <p>¡Nos pondremos en contacto lo antes posible!</p>
+    </div>
+  `,
+  styleUrls: ['./contacto.css']
+})
+export class ContactoComponent {}
