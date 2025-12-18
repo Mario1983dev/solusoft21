@@ -1,0 +1,57 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+.main-header {
+  background-color: #0aa15f;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 20px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav-container a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-container a.active {
+  text-decoration: underline;
+}
+
+/* CONTENIDO */
+.main-content {
+  flex: 1;
+  text-align: center;
+  padding: 30px 16px;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.main-logo {
+  width: 180px;
+  max-width: 70vw;
+  height: auto;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #0aa15f;
+  color: white;
+  text-align: center;
+  padding: 14px 0;
+}

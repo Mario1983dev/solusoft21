@@ -1,37 +1,37 @@
-.page-content {
-  max-width: 850px;
+/* CONTENEDOR GENERAL */
+.page {
+  max-width: 900px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  line-height: 1.6rem;
-}
-
-/* Título principal */
-h1 {
-  font-size: 1.7rem;        /* Más pequeño y elegante */
-  margin-bottom: 1rem;
-  color: #2c3e50;
-  font-weight: 600;
-}
-
-/* Subtítulos */
-h2 {
-  font-size: 1.25rem;       /* Mucho más proporcionado */
-  margin-top: 1.2rem;
-  margin-bottom: 0.4rem;
-  color: #16a085;
-  font-weight: 500;
-}
-
-/* Párrafos */
-p {
-  font-size: 1.05rem;
-  margin-bottom: 0.8rem;
-  color: #444;
-}
-
-/* Lista de valores */
-.valores-lista {
+  padding: 40px 20px;
   text-align: left;
-  display: inline-block;
-  font-siz
+}
+
+/* TÍTULO */
+.page h1 {
+  font-size: 32px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* TEXTO */
+.page p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 18px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .page {
+    padding: 30px 16px;
+  }
+
+  .page h1 {
+    font-size: 26px;
+  }
+
+  .page p {
+    font-size: 16px;
+  }
+}
