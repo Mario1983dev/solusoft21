@@ -1,37 +1,86 @@
-/* CONTENEDOR GENERAL */
-.page {
-  max-width: 900px;
-  margin: 0 auto;
+/* ===== CONTENEDOR GENERAL ===== */
+.page-content {
+  background-color: #f4f6f9;
   padding: 40px 20px;
-  text-align: left;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  /* ESTA LÍNEA ELIMINA EL SCROLL */
+ min-height: calc(100vh - 200px);
+
+
 }
 
-/* TÍTULO */
-.page h1 {
-  font-size: 32px;
-  margin-bottom: 24px;
+
+/* ===== CAJA PRINCIPAL ===== */
+.content-box {
+  background: #ffffff;
+  max-width: 900px;
+  width: 100%;
+  padding: 45px 55px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
   text-align: center;
 }
 
-/* TEXTO */
-.page p {
-  font-size: 18px;
-  line-height: 1.7;
-  color: #444;
-  margin-bottom: 18px;
+/* ===== TITULO ===== */
+h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #0b2a4a;
 }
 
-/* RESPONSIVE */
+/* ===== TEXTO INTRO ===== */
+.intro {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+/* ===== GRID ===== */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+/* ===== TARJETAS ===== */
+.info-card {
+  background: #f8fafc;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: left;
+  border: 1px solid #e6ecf3;
+}
+
+.info-card h2 {
+  font-size: 20px;
+  color: #0b2a4a;
+  margin-bottom: 12px;
+}
+
+.info-card p {
+  font-size: 15.8px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-  .page {
-    padding: 30px 16px;
+  .info-grid {
+    grid-template-columns: 1fr;
   }
 
-  .page h1 {
-    font-size: 26px;
+  .content-box {
+    padding: 30px 25px;
   }
 
-  .page p {
-    font-size: 16px;
+  h1 {
+    font-size: 24px;
   }
 }

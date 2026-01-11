@@ -1,43 +1,64 @@
-/* CONTENEDOR GENERAL */
-.page {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 40px 20px;
+.page-content {
+  min-height: calc(100vh - 120px); /* navbar + footer */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f4f6f9;
+}
+
+.content-box {
+  background: #ffffff;
+  max-width: 850px;
+  width: 100%;
+  padding: 40px 50px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
   text-align: center;
 }
 
-/* TÍTULO */
-.page h1 {
-  font-size: 32px;
-  margin-bottom: 24px;
-}
+/* contacto info */
 
-/* TEXTO */
-.page p {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #444;
-  margin-bottom: 16px;
-}
-
-/* BLOQUE DE CONTACTO */
 .contact-info {
-  margin-top: 30px;
-  font-size: 17px;
+  background: #f8fafc;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 25px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .page {
-    padding: 30px 16px;
-  }
+.contact-info p {
+  font-size: 16px;
+  color: #444;
+  margin: 10px 0;
+}
 
-  .page h1 {
-    font-size: 26px;
-  }
+.whatsapp-box {
+  margin-top: 25px;
+}
 
-  .page p,
-  .contact-info {
-    font-size: 16px;
+.whatsapp-btn {
+  display: inline-block;
+  background: #25d366;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 15px rgba(37, 211, 102, 0.35);
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .content-box {
+    padding: 25px 20px;
   }
 }
