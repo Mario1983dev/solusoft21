@@ -6,52 +6,114 @@
 
 /* NAVBAR */
 .main-header {
-  background-color: #0D2A4A;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(7, 31, 56, 0.94);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(7, 31, 56, 0.14);
 }
 
 .navbar {
-  max-width: 1200px;
+  max-width: 1180px;
   margin: 0 auto;
-  padding: 14px 20px;
+  padding: 12px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.brand img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #ffffff;
 }
 
 .nav-container {
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 6px;
+  flex-wrap: wrap;
 }
 
 .nav-container a {
-  color: white;
-  font-weight: 600;
+  color: rgba(255,255,255,0.86);
+  font-weight: 700;
   text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 999px;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
+.nav-container a:hover,
 .nav-container a.active {
-  text-decoration: underline;
+  background: rgba(255,255,255,0.12);
+  color: #ffffff;
+}
+
+.nav-container .nav-cta {
+  background: #11a85b;
+  color: #ffffff;
+  margin-left: 4px;
 }
 
 /* CONTENIDO */
 .main-content {
   flex: 1;
-  text-align: center;
-  padding: 30px 16px;
-}
-
-.logo-container {
-  margin-bottom: 20px;
-}
-
-.main-logo {
-  width: 180px;
-  max-width: 70vw;
-  height: auto;
 }
 
 /* FOOTER */
 .footer {
-  background-color: #0D2A4A;
+  background: #071f38;
   color: white;
   text-align: center;
-  padding: 14px 0;
+  padding: 24px 16px;
+}
+
+.footer div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.footer span,
+.footer p {
+  color: rgba(255,255,255,0.72);
+  margin: 0;
+  font-size: 14px;
+}
+
+@media (max-width: 760px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .brand {
+    justify-content: center;
+  }
+
+  .nav-container {
+    gap: 4px;
+  }
+
+  .nav-container a {
+    padding: 9px 10px;
+    font-size: 14px;
+  }
 }

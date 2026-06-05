@@ -1,0 +1,29 @@
+CAMBIOS PAGINA PRINCIPAL SOLUSOFT
+==================================
+
+Se modernizó la página principal:
+
+1. Nuevo hero principal con mensaje comercial claro.
+2. Botones de acción:
+   - Solicitar una asesoría
+   - Ver calculadora de materiales (/app/)
+3. Sección de servicios:
+   - Desarrollo Web
+   - Sistemas a Medida
+   - Gestión y Reportes
+   - Cálculo de Materiales
+4. Sección de productos:
+   - Calculadora de materiales SoluSoft
+   - ERP Contable SoluSoft
+5. Sección de valor diferencial.
+6. CTA final para contacto.
+7. Navbar más profesional con logo y botón Calculadora.
+8. Footer mejorado.
+9. Diseño responsive para celular y escritorio.
+
+Archivos modificados:
+- src/app/app.html
+- src/app/app.css
+- src/app/pages/home/home.html
+- src/app/pages/home/home.css
+- src/app/pages/home/home.ts
