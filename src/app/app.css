@@ -9,9 +9,9 @@
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(7, 31, 56, 0.94);
+  background: rgba(7, 31, 56, 0.96);
   backdrop-filter: blur(10px);
-  box-shadow: 0 8px 24px rgba(7, 31, 56, 0.14);
+  box-shadow: 0 8px 24px rgba(7, 31, 56, 0.18);
 }
 
 .navbar {
@@ -27,19 +27,21 @@
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   color: #ffffff;
   text-decoration: none;
   font-weight: 800;
-  font-size: 20px;
+  font-size: 22px;
+  letter-spacing: -0.3px;
 }
 
 .brand img {
-  width: 38px;
-  height: 38px;
+  width: 46px;
+  height: 46px;
   object-fit: contain;
-  border-radius: 8px;
+  border-radius: 10px;
   background: #ffffff;
+  padding: 3px;
 }
 
 .nav-container {
@@ -56,7 +58,7 @@
   text-decoration: none;
   padding: 10px 14px;
   border-radius: 999px;
-  transition: background 0.2s ease, color 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
 .nav-container a:hover,
@@ -65,8 +67,12 @@
   color: #ffffff;
 }
 
+.nav-container a:hover {
+  transform: translateY(-1px);
+}
+
 .nav-container .nav-cta {
-  background: #11a85b;
+  background: #2563eb;
   color: #ffffff;
   margin-left: 4px;
 }
@@ -81,7 +87,8 @@
   background: #071f38;
   color: white;
   text-align: center;
-  padding: 24px 16px;
+  padding: 26px 16px;
+  border-top: 1px solid rgba(255,255,255,0.08);
 }
 
 .footer div {
@@ -89,6 +96,10 @@
   flex-direction: column;
   gap: 4px;
   margin-bottom: 8px;
+}
+
+.footer strong {
+  font-size: 17px;
 }
 
 .footer span,

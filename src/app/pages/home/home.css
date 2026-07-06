@@ -7,8 +7,8 @@
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(circle at top left, rgba(35, 178, 98, 0.24), transparent 32%),
-    linear-gradient(135deg, #071f38 0%, #0b3d6b 55%, #0a8f52 100%);
+radial-gradient(circle at top left, rgba(37, 99, 235, 0.28), transparent 32%),
+linear-gradient(135deg, #071f38 0%, #0b3d6b 55%, #0f5fb8 100%);
   color: #ffffff;
   padding: 86px 22px 70px;
 }
@@ -43,7 +43,7 @@
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #26d07c;
+  color: #2563eb;
 }
 
 .hero h1 {
